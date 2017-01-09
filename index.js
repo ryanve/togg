@@ -6,7 +6,7 @@
     }
 
     function pool(stack) {
-      stack = stack.is('[togg-scope]') ? stack : stack.closest('[togg-scope]')
+      stack = stack.closest('[togg-scope]')
       if (!stack.length) throw new Error('Missing scope')
       var id = stack.attr('togg-scope')
       stack = id ? related(id) : stack
