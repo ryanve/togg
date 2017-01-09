@@ -1,6 +1,6 @@
 {
   "name": "togg",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Angular UI directive",
   "main": "index.js",
   "scripts": {
