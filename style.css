@@ -12,6 +12,7 @@ html { background: whitesmoke; color: black }
 .group { background: DeepSkyBlue }
 :focus { outline-color: DeepSkyBlue; border-color: DeepSkyBlue }
 .button:disabled { opacity: .4 }
+.input:enabled { background: MediumSpringGreen; border-color: MediumSpringGreen; color: black; }
 
 *, :before, :after { box-sizing: border-box }
 [hidden] { display: none }

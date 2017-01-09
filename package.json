@@ -1,7 +1,7 @@
 {
   "name": "togg",
   "version": "0.1.0",
-  "description": "Angular UI directive",
+  "description": "Angular UI directive for toggling classes and beyond",
   "main": "index.js",
   "scripts": {
     "pretest": "npm update",
