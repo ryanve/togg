@@ -38,7 +38,10 @@
   <li id="enable" class="group">
     <h3 class="group__title">Click to enable/disable input</h3>
     <fieldset togg-scope>
-      <button class="button" togg-event="click">Toggle</button>
+      <button class="button" togg-event="click">
+        <span togg-attr="hidden">Enable</span>
+        <span togg-attr="hidden" hidden>Disable</span>
+      </button>
       <input class="input button width--50" togg-prop="disabled" disabled>
     </fieldset>
   </li>
