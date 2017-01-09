@@ -1,0 +1,42 @@
+{
+  "name": "togg",
+  "version": "0.0.0",
+  "description": "Angular UI directive",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm update",
+    "test": "node test.js"
+  },
+  "homepage": "https://github.com/ryanve/togg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/togg.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-directive",
+    "directives",
+    "directive",
+    "interaction",
+    "prototyping",
+    "behavior",
+    "classes",
+    "toggle",
+    "states",
+    "state",
+    "event",
+    "click",
+    "class",
+    "ui-directive",
+    "ui-component",
+    "ui"
+  ],
+  "author": "Ryan Van Etten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanve/togg/issues"
+  },
+  "devDependencies": {
+    "open": "0.0.5"
+  }
+}

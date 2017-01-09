@@ -1,0 +1,115 @@
+::selection { background: yellow; color: black; }
+html { background: whitesmoke; color: black }
+.logo { background: hotpink; color: black }
+.button { background: hotpink; border-color: hotpink; color: black }
+.button--toggled { background: MediumSpringGreen; border-color: MediumSpringGreen; color: black }
+.button:focus, .button:active { border-color: MistyRose; }
+.button--toggled:focus { border-color: DeepSkyBlue; }
+.demo { background: inherit; border-color: SkyBlue; color: black }
+.demo[class] { outline: 0 }
+.demo--toggled { background: MediumSpringGreen; border-color: MediumSpringGreen; color: black }
+.demo:focus { border-color: black; }
+.group { background: DeepSkyBlue }
+:focus { outline-color: DeepSkyBlue; border-color: DeepSkyBlue }
+.button:disabled { opacity: .4 }
+
+*, :before, :after { box-sizing: border-box }
+[hidden] { display: none }
+html { font: 1em/2 sans-serif; }
+body { width: 100%; margin: auto; padding: 1em }
+a { text-decoration: none }
+a:hover { text-decoration: underline }
+button:enabled:hover { cursor: pointer }
+pre, code { -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2 }
+pre { white-space: pre-wrap; word-wrap: break-word; overflow: auto }
+header, section, aside { display: block }
+fieldset { padding: 0; border: 0; margin: 0 0 1em; }
+pre, fieldset { border-radius: 1em; }
+h1, h2, h3 { line-height: 1 }
+h2 { font-size: 1.5em; font-weight: inherit }
+figure { display: block; margin: 0 0 1em }
+
+.demo {
+  border-radius: 1em;
+  border-width: 2px;
+  border-style: dashed;
+  padding: .5em 1em;
+  font-size: 1.25em;
+}
+
+.button {
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: bold;
+  min-height: 2.5em;
+  display: inline-block;
+  border-width: .33333em;
+  border-style: double;
+  border-radius: 1em;
+  padding: 0 .66666em;
+  margin: 0 0 1px;
+}
+
+.button[class] {
+  outline: 0;
+}
+
+.banner {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: table;
+  border-radius: 1em;
+  margin-top: 0;
+  font-size: 2em;
+  width: 5em;
+  height: 5em;
+  padding: 2em 0;
+  letter-spacing: .2em;
+  max-width: 100%;
+  text-align: center;
+  font-family: monospace;
+}
+
+.block {
+  margin: 0 0 1rem;
+  padding: 0;
+  display: block;
+  font-size: inherit;
+}
+
+.list {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.group {
+  display: block;
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid silver;
+  margin: 0 0 2rem;
+  counter-increment: group;
+}
+
+.group__title {
+  font-weight: inherit;
+}
+
+.lede {
+  margin: 0 0 1rem;
+  font-size: 1.5em;
+  line-height: 1.2;
+  max-width: 20em;
+}
+
+.inherit--color {
+  color: inherit;
+}
+
+.width--50 {
+  width: 50%;
+}
