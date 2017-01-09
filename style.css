@@ -1,12 +1,10 @@
 ::selection { background: yellow; color: black; }
 html { background: whitesmoke; color: black }
-.logo { background: hotpink; color: black }
-.button { background: hotpink; border-color: hotpink; color: black }
+.logo, .button { background: hotpink; border-color: hotpink; color: black }
 .button--toggled { background: MediumSpringGreen; border-color: MediumSpringGreen; color: black }
-.button:focus, .button:active { border-color: MistyRose; }
+.logo:focus, .button:focus { border-color: MistyRose; }
 .button--toggled:focus { border-color: DeepSkyBlue; }
 .demo { background: inherit; border-color: SkyBlue; color: black }
-.demo[class] { outline: 0 }
 .demo--toggled { background: MediumSpringGreen; border-color: MediumSpringGreen; color: black }
 .demo:focus { border-color: black; }
 .group { background: DeepSkyBlue }
@@ -27,7 +25,7 @@ header, section, aside { display: block }
 fieldset { padding: 0; border: 0; margin: 0 0 1em; }
 pre, fieldset { border-radius: 1em; }
 h1, h2, h3 { line-height: 1 }
-h2 { font-size: 1.5em; font-weight: inherit }
+h2 { font-size: 1.5em }
 figure { display: block; margin: 0 0 1em }
 
 .demo {
@@ -51,6 +49,8 @@ figure { display: block; margin: 0 0 1em }
   margin: 0 0 1px;
 }
 
+.logo[class],
+.demo[class],
 .button[class] {
   outline: 0;
 }
@@ -66,7 +66,9 @@ figure { display: block; margin: 0 0 1em }
   font-size: 2em;
   width: 5em;
   height: 5em;
-  padding: 2em 0;
+  padding: 1.66666em 0;
+  border-width: .33333em;
+  border-style: double;
   letter-spacing: .2em;
   max-width: 100%;
   text-align: center;
@@ -113,4 +115,21 @@ figure { display: block; margin: 0 0 1em }
 
 .width--50 {
   width: 50%;
+}
+
+@media (min-width: 20em) {
+  .menu {
+    position: absolute;
+    text-align: right;
+    top: 1rem;
+    right: 1rem;
+    max-width: 100%;
+  }
+}
+
+.clunk {
+  display: block;
+  text-align: center;
+  margin: 0 0 .5rem;
+  min-width: 5em
 }
