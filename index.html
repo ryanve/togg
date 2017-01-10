@@ -43,7 +43,7 @@
   <li id="enable" class="group">
     <h3 class="group__title">Click to enable/disable input</h3>
     <fieldset togg-scope>
-      <button class="button" togg-event="click">
+      <button class="button" togg-class="button--toggled" togg-event="click">
         <span togg-attr="hidden">Enable</span>
         <span togg-attr="hidden" hidden>Disable</span>
       </button>
@@ -53,7 +53,7 @@
   <li id="change" class="group">
     <h3 class="group__title">Check/uncheck to toggle attribute</h3>
     <fieldset togg-scope>
-      <label class="button"><input type="checkbox" togg-event="change"> Change</label>
+      <label class="button" togg-class="button--toggled"><input type="checkbox" togg-event="change"> Change</label>
       <span togg-attr="hidden" hidden>checked</span>
       <span togg-attr="hidden">unchecked</span>
     </fieldset>
@@ -61,14 +61,14 @@
   <li id="bubble" class="group">
     <h3 class="group__title">Click to trigger custom event</h3>
     <fieldset>
-      <button class="button" togg-event="click" togg-trigger="bubble" togg-scope>Trigger</button>
+      <button class="button" togg-class="button--toggled" togg-event="click" togg-trigger="bubble" togg-scope>Trigger</button>
     </fieldset>
     <figure class="demo js-timestamp">expect timestamp here</figure>
   </li>
   <li id="empty" class="group" togg-scope>
     <h3 class="group__title">Click to empty target</h3>
     <fieldset>
-      <button class="button" togg-event="click">Empty</button>
+      <button class="button" togg-class="button--toggled" togg-event="click">Empty</button>
     </fieldset>
     <figure class="demo" togg-method="empty" contenteditable>target target target target target target target target target target</figure>
   </li>
