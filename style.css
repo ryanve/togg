@@ -27,6 +27,7 @@ pre, fieldset { border-radius: 1em; }
 h1, h2, h3 { line-height: 1 }
 h2 { font-size: 1.5em }
 figure { display: block; margin: 0 0 1em }
+button::-moz-focus-inner { border-style: none }
 
 .demo {
   border-radius: 1em;
