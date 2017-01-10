@@ -7,11 +7,9 @@
     "pretest": "npm update",
     "test": "node test.js"
   },
+  "author": "Ryan Van Etten",
+  "license": "MIT",
   "homepage": "https://github.com/ryanve/togg",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryanve/togg.git"
-  },
   "keywords": [
     "angular",
     "angular-directive",
@@ -31,8 +29,10 @@
     "ui-component",
     "ui"
   ],
-  "author": "Ryan Van Etten",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/togg.git"
+  },
   "bugs": {
     "url": "https://github.com/ryanve/togg/issues"
   },
