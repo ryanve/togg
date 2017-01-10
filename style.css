@@ -16,6 +16,7 @@ html { background: whitesmoke; color: black }
 [hidden] { display: none }
 html { font: 1em/2 sans-serif; }
 body { width: 100%; margin: auto; padding: 1em }
+a, button, input, label, select, summary, textarea { touch-action: manipulation }
 a { text-decoration: none }
 a:hover { text-decoration: underline }
 pre, code { -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2 }
