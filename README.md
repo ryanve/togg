@@ -1,5 +1,5 @@
 # togg
-Angular UI directive for toggling classes, attributes, properties based on events. Live your toggle dreams.
+Angular UI directive to end all UI directives. Toggle classes, attributes, properties. Live your toggle dreams.
 
 ## [Interactive Examples](https://ryanve.github.io/togg/)
 
