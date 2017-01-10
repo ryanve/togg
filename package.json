@@ -2,7 +2,7 @@
   "name": "togg",
   "version": "0.2.1",
   "description": "Angular UI directive for toggling classes and beyond",
-  "main": "index.js",
+  "main": "togg.js",
   "scripts": {
     "pretest": "npm update",
     "test": "node test.js"
