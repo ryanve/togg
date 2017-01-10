@@ -18,7 +18,6 @@ html { font: 1em/2 sans-serif; }
 body { width: 100%; margin: auto; padding: 1em }
 a { text-decoration: none }
 a:hover { text-decoration: underline }
-button:enabled:hover { cursor: pointer }
 pre, code { -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2 }
 pre { white-space: pre-wrap; word-wrap: break-word; overflow: auto }
 header, section, aside { display: block }
@@ -47,6 +46,12 @@ figure { display: block; margin: 0 0 1em }
   border-radius: 1em;
   padding: 0 .66666em;
   margin: 0 0 1px;
+  cursor: pointer;
+}
+
+.button:disabled,
+:disabled .button {
+  cursor: default;
 }
 
 .button:enabled:hover,
