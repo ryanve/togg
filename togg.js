@@ -17,6 +17,13 @@
       return value && '{' === value[0] ? scope.$eval(value) : value
     }
 
+    function has(element, attr) {
+      return element.attr(attr) != null
+    }
+
+    var value = {'true': '', 'false': null}
+    var force = {'true': true, 'false': false}
+
     return {
       restrict: 'A',
       link: function (scope, element, atts) {
@@ -24,6 +31,9 @@
         if (!event) throw new Error('Missing event')
 
         element.on(event, function() {
+          var state = read(scope, element.attr('togg-state'))
+          var useForce = null == state ? state : force.hasOwnProperty(state)
+
           pool(element).each(function() {
             var it = angular.element(this)
             var classes = read(scope, it.attr('togg-class'))
@@ -32,9 +42,9 @@
             var method = read(scope, it.attr('togg-method'))
             var trigger = read(scope, it.attr('togg-trigger'))
 
-            if (classes) it.toggleClass(classes)
-            if (attr) it.attr(attr, null == it.attr(attr) ? '' : null)
-            if (prop) it.prop(prop, !it.prop(prop))
+            if (classes) useForce ? it.toggleClass(classes, force[state]) : it.toggleClass(classes)
+            if (attr) it.attr(attr, value[useForce ? force[state] : !has(it, attr)])
+            if (prop) it.prop(prop, useForce ? force[state] : !it.prop(prop))
             if (method) it[method]()
             if (trigger) it.trigger(trigger)
           })
