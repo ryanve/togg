@@ -10,6 +10,7 @@ Angular UI directive to end all UI directives. Toggle classes, attributes, prope
 - `togg-class`: classes to toggle when event occurs
 - `togg-attr`: attribute to toggle when event occurs
 - `togg-prop`: property to toggle when event occurs
+- `togg-state`: force state `true` or `false` from event target
 - `togg-trigger` additional events to trigger when event occurs
 - `togg-method`: jQuery method to invoke when event occurs
 

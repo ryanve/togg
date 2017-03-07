@@ -59,6 +59,14 @@
       <span togg-attr="hidden">unchecked</span>
     </fieldset>
   </li>
+  <li id="force" class="group" togg-scope>
+    <h3 class="group__title">Click to force state</h3>
+    <fieldset>
+      <button class="button" togg-event="click" togg-class="button--toggled" togg-state="true">True</button>
+      <button class="button" togg-event="click" togg-class="button--toggled" togg-state="false">False</button>
+    </fieldset>
+    <figure class="demo" togg-class="demo--toggled">target</figure>
+  </li>
   <li id="bubble" class="group">
     <h3 class="group__title">Click to trigger custom event</h3>
     <fieldset>
