@@ -4,7 +4,9 @@
   "description": "Angular UI directive for toggling classes and beyond",
   "main": "togg.js",
   "scripts": {
-    "pretest": "npm update",
+    "lint": "eslint . --ext .js",
+    "preversion": "npm test",
+    "pretest": "npm run lint",
     "test": "node test.js"
   },
   "author": "Ryan Van Etten",
@@ -37,6 +39,7 @@
     "url": "https://github.com/ryanve/togg/issues"
   },
   "devDependencies": {
+    "eslint": "^3.17.1",
     "open": "0.0.5"
   }
 }
