@@ -27,3 +27,7 @@ npm install togg --save
 ```js
 angular.module('yourApp', ['togg'])
 ```
+
+## Related
+
+[Also available as a Vue directive](https://github.com/ryanve/v-togg)
