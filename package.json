@@ -20,15 +20,13 @@
     "interaction",
     "prototyping",
     "behavior",
-    "classes",
+    "toggles",
     "toggle",
     "states",
-    "state",
-    "event",
     "click",
-    "class",
     "ui-directive",
     "ui-component",
+    "ui-state",
     "ui"
   ],
   "repository": {
