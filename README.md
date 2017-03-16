@@ -27,9 +27,3 @@ npm install togg --save
 ```js
 angular.module('yourApp', ['togg'])
 ```
-
-## Develop
-
-```
-npm test
-```
